@@ -5,3 +5,5 @@
 ## 1-trim_me_down.py - An exercise in slicing columns from a 2D matrix.
 
 ## 2-size_me_please.py - A function that calculates the shape of a matrix.
+
+## 3-flip_me_over.py - A function that returns the transpose of a 2D matrix.
