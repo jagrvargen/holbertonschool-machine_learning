@@ -9,3 +9,5 @@
 ### 3-flip_me_over.py - A function that returns the transpose of a 2D matrix.
 
 ### 4-line_up.py - A function that performs an element-wise addition of two arrays.
+
+### 5-across_the_planes.py - A function that performs and element-wise addition of two 2D matrices.
