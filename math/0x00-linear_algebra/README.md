@@ -16,4 +16,6 @@
 
 ### 7-gettin_cozy.py - A function that concatenates two 2D matrices.
 
-### 9-ridin_bareback.py - A function the performs matrix multiplication.
+### 8-ridin_bareback.py - A function the performs matrix multiplication.
+
+### 9-let_the_butcher_slice_it.py - An exercise in using numpy to take specific slices of 2D matrices.
