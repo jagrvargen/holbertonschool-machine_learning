@@ -23,3 +23,5 @@
 ### 10-ill_use_my_scale.py - An exercise in using numpy to calculate the shape of an n-dimensional tensor.
 
 ### 11-the_western_exchange.py - An exercise in using numpy to transpose an n-dimensional tensor.
+
+### 12-bracin_the_elements.py - An exercise in using numpy to perform element-wise addition, subtraction, multiplication, and division.
