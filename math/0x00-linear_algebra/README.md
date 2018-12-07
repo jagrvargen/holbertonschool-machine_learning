@@ -19,3 +19,5 @@
 ### 8-ridin_bareback.py - A function the performs matrix multiplication.
 
 ### 9-let_the_butcher_slice_it.py - An exercise in using numpy to take specific slices of 2D matrices.
+
+### 10-ill_use_my_scale.py - An exercise in using numpy to calculate the shape of a numpy.ndarray.
