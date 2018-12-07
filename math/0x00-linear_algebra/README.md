@@ -15,3 +15,5 @@
 ### 6-howdy_partner.py - A function that concatenates two arrays.
 
 ### 7-gettin_cozy.py - A function that concatenates two 2D matrices.
+
+### 9-ridin_bareback.py - A function the performs matrix multiplication.
