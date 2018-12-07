@@ -13,3 +13,5 @@
 ### 5-across_the_planes.py - A function that performs and element-wise addition of two 2D matrices.
 
 ### 6-howdy_partner.py - A function that concatenates two arrays.
+
+### 7-gettin_cozy.py - A function that concatenates two 2D matrices.
