@@ -27,3 +27,5 @@
 ### 12-bracin_the_elements.py - An exercise in using numpy to perform element-wise addition, subtraction, multiplication, and division.
 
 ### 13-cats_got_your_tongue.py - An exercise in using numpy to concatenate two n-dimensional tensors.
+
+### 14-saddle_up.py - An exercise in using numpy to perform matrix multiplication.
