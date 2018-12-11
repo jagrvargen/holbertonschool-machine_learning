@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-import numpy as np
+""" This file contains the np_elementwise function. """
+
 
 def np_elementwise(mat1, mat2):
     """ 
