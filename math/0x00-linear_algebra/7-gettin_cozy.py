@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+""" This function contains the  cat_matrices2D function. """
+
 
 def cat_matrices2D(mat1, mat2, axis=0):
     """ Concatenates two 2D matrices """
@@ -10,9 +12,9 @@ def cat_matrices2D(mat1, mat2, axis=0):
 
     if axis != 0 and axis != 1:
         return None
-    
+
     concat = []
-    
+
     if axis == 0:
         concat.extend(mat1)
         concat.extend(mat2)
