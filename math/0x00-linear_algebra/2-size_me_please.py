@@ -4,7 +4,7 @@
 def matrix_shape(matrix):
     """ Calculates the shape of an n-dimensional matrix. """
     if not matrix:
-        return matrix
+        return [0]
 
     shape = []
     m = matrix[:]
