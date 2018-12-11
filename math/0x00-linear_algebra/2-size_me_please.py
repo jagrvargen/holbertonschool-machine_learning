@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def matrix_shape(matrix):
     """ Calculates the shape of an n-dimensional matrix. """
     shape = []
@@ -10,4 +11,3 @@ def matrix_shape(matrix):
         m = m.pop()
 
     return shape
-
