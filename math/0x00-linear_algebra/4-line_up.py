@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+""" This file contains the add_arrays function. """
+
 
 def add_arrays(arr1, arr2):
     """ Performs element-wise addition of two arrays of equal length. """
