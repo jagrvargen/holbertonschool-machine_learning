@@ -5,5 +5,6 @@ import numpy as np
 
 def np_cat(mat1, mat2, axis=0):
     """ Concatenates two tensors along a specific axis. """
-    concat = np.concatenate((mat1, mat2), axis=axis)
-    return concat
+    mat_a = mat1[:]
+    mat_b = mat2[:]
+    return np.concatenate((mat_a, mat_b), axis=axis)
