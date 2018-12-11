@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+""" This file contains the mat_mul function. """
+
 
 def mat_mul(mat1, mat2):
     """ Performs matrix multiplication on 2D matrices. """
