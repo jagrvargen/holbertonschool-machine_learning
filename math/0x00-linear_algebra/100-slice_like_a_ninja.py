@@ -4,15 +4,21 @@
 
 def np_slice(matrix, axes={}):
     """ Slices a matrix along specific axes. """
+
     s0 = eval('slice' + str((axes[0]))) if 0 in axes else slice(None)
     s1 = eval('slice' + str(axes[1])) if 1 in axes else slice(None)
     s2 = eval('slice' + str(axes[2])) if 2 in axes else slice(None)
 
+    
     if len(matrix.shape) == 1:
-        return matrix[s0]
+        s = matrix[s0]
+        return s
     if len(matrix.shape) == 2:
-        return matrix[s0, s1]
+        s = matrix[s0, s1]
+        return s
     elif len(matrix.shape) == 3:
-        return matrix[s0, s1, s2]
+        s = matrix[s0, s1, s2]
+        return s
     else:
-        return matrix
+        s = matrix
+        return s
