@@ -11,14 +11,14 @@ def np_slice(matrix, axes={}):
 
     
     if len(matrix.shape) == 1:
-        s = matrix[s0]
+        s = matrix[s0][:]
         return s
     if len(matrix.shape) == 2:
-        s = matrix[s0, s1]
+        s = matrix[s0, s1][:]
         return s
     elif len(matrix.shape) == 3:
-        s = matrix[s0, s1, s2]
+        s = matrix[s0, s1, s2][:]
         return s
     else:
-        s = matrix
+        s = matrix[:]
         return s
