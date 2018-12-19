@@ -7,7 +7,5 @@ def summation_i_squared(n):
     if not isinstance(n, int):
         return None
 
-    s = range(1,n+1)
+    s = range(1, n+1)
     return sum(list(map(lambda x: x**2, s)))
-
-print(summation_i_squared(4))
