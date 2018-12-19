@@ -4,8 +4,10 @@
 
 def summation_i_squared(n):
     """ Calculates the summation of i^2 from i = 1 to n """
-    sum = 0
-    for i in range(1, n+1):
-        sum += i**2
+    if not isinstance(n, int):
+        return None
 
-    return sum
+    s = range(1,n+1)
+    return sum(list(map(lambda x: x**2, s)))
+
+print(summation_i_squared(4))
