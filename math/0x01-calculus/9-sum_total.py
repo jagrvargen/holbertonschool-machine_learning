@@ -4,7 +4,7 @@
 
 def summation_i_squared(n):
     """ Calculates the summation of i^2 from i = 1 to n """
-    if not isinstance(n, int):
+    if not isinstance(n, int) or n < 1:
         return None
     if n == 1:
         return 1
