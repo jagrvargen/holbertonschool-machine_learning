@@ -4,6 +4,9 @@
 
 def poly_derivative(poly):
     """ Calculates the derivate of a polynomial. """
+    if not poly:
+        return None
+
     deriv = []
 
     for i, c in enumerate(poly):
