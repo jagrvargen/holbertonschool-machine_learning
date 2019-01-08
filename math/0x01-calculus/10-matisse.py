@@ -4,12 +4,12 @@
 
 def poly_derivative(poly):
     """ Calculates the derivate of a polynomial. """
-    if not poly:
-        return None
+    if sum(poly) == 0:
+        return [0]
 
     deriv = []
 
-    for i, c in enumerate(poly):
-        deriv.append(i * c)
+    for i in range(1, len(poly)):
+        deriv.append(i * poly[i])
 
     return deriv
