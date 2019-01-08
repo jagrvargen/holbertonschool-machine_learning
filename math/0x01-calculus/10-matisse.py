@@ -4,7 +4,7 @@
 
 def poly_derivative(poly):
     """ Calculates the derivate of a polynomial. """
-    if sum(poly) == 0:
+    if sum(poly) == 0 or len(poly) <= 1:
         return [0]
 
     deriv = []
