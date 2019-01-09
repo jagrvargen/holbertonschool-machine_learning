@@ -7,3 +7,5 @@
 ### 2-change_scale.py - Creates a line graph in which the y-axis is logarithmically scaled.
 
 ### 3-two.py - Creates two line graphs on the same plot, one displayed as dashes and the other as a solid line, with a legend in the upper right-hand corner
+
+### 4-frequency.py - Creates a simple histogram.
