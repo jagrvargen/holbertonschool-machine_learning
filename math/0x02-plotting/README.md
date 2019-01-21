@@ -9,3 +9,5 @@
 ### 3-two.py - Creates two line graphs on the same plot, one displayed as dashes and the other as a solid line, with a legend in the upper right-hand corner
 
 ### 4-frequency.py - Creates a simple histogram.
+
+### 5-all_in_one.py - Combine the above 5 plots into a single plot.
