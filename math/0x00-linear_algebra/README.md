@@ -29,3 +29,7 @@
 ### 13-cats_got_your_tongue.py - An exercise in using numpy to concatenate two n-dimensional tensors.
 
 ### 14-saddle_up.py - An exercise in using numpy to perform matrix multiplication.
+
+### 100-slice_like_a_ninja.py - A function that slices a matrix along specific axes without the use of numpy.
+
+### 101-the_whole_barn.py - A function that adds two matrices without the use of numpy.
