@@ -10,4 +10,6 @@
 
 ### 4-frequency.py - Creates a simple histogram.
 
-### 5-all_in_one.py - Makes a combined figure of all five of the above graphs.
+### 5-all_in_one.py - Combine the above 5 plots into a single plot.
+
+### 6-bars.py - Create a stacked bar graph with 4 different categories represented by 4 different colors on each bar.
