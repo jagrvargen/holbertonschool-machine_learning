@@ -20,12 +20,15 @@ class Neuron:
 
     @property
     def W(self):
+        """ Returns the values of the weights vector """
         return self.__W
 
     @property
     def b(self):
+        """ Returns the value of the bias neuron """
         return self.__b
 
     @property
     def A(self):
+        """ Returns the value of the activation output """
         return self.__A
