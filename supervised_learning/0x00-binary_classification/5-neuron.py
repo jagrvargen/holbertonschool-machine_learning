@@ -59,5 +59,6 @@ class Neuron:
         dw = X @ dz.T / X.shape[1]
         db = np.sum(dz.T) / X.shape[1]
 
-        self.__W = self.__W.T - alpha * dw.T
+        self.__W = self.__W - alpha * dw
         self.__b = self.__b - alpha * db
+        print(self.W.shape)
