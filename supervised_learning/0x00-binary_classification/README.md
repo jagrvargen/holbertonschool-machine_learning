@@ -9,3 +9,5 @@
 ### 3-neuron.py - Adds the cost method which calculates the cost of the model using logistic regression.
 
 ### 4-neuron.py - Adds the evaluate method which evaluates the neuron's predictions.
+
+### 5-neuron.py - Adds the a method to calculate one pass of gradient descent on the neuron.
