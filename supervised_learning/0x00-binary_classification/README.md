@@ -13,3 +13,5 @@
 ### 5-neuron.py - Adds the a method to calculate one pass of gradient descent on the neuron.
 
 ### 6-neuron.py - Adds the train method used to train the neuron.
+
+### 7-neuron.py - Updates the training method to include options for verbose printing, graph rendering, and step tracking.
