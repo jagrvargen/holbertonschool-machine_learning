@@ -19,3 +19,5 @@
 ### 8-neural_network.py - Creates a new class NeuralNetwork akin to the Neuron class except with a single hidden layer.
 
 ### 9-neural_network.py - Convert public instance attributes to private instance attributes and add corresponding getter methods.
+
+### 10-neural_network.py - Adds a method for forward propagation.
