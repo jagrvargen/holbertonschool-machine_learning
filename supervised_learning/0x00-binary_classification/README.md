@@ -17,3 +17,5 @@
 ### 7-neuron.py - Updates the training method to include options for verbose printing, graph rendering, and step tracking.
 
 ### 8-neural_network.py - Creates a new class NeuralNetwork akin to the Neuron class except with a single hidden layer.
+
+### 9-neural_network.py - Convert public instance attributes to private instance attributes and add corresponding getter methods.
