@@ -15,3 +15,5 @@
 ### 6-neuron.py - Adds the train method used to train the neuron.
 
 ### 7-neuron.py - Updates the training method to include options for verbose printing, graph rendering, and step tracking.
+
+### 8-neural_network.py - Creates a new class NeuralNetwork akin to the Neuron class except with a single hidden layer.
