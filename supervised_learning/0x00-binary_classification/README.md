@@ -23,3 +23,5 @@
 ### 10-neural_network.py - Adds a method for forward propagation.
 
 ### 11-neural_network.py - Adds a method to calculate the cost of the model using logistic regression.
+
+### 12-neural_network.py - Adds a method to evaluate the network's predictions.
