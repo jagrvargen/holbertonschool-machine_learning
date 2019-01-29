@@ -21,3 +21,5 @@
 ### 9-neural_network.py - Convert public instance attributes to private instance attributes and add corresponding getter methods.
 
 ### 10-neural_network.py - Adds a method for forward propagation.
+
+### 11-neural_network.py - Adds a method to calculate the cost of the model using logistic regression.
