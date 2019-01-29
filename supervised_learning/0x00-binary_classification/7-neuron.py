@@ -102,7 +102,6 @@ class Neuron:
         if graph:
             y[-1] = cost
             plt.plot(x, y)
-#            plt.ylim(0, (iterations // step + 1))
             plt.xlabel("iteration")
             plt.ylabel("cost")
             plt.suptitle("Training Cost")
