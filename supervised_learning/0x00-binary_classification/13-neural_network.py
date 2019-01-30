@@ -106,7 +106,7 @@ class NeuralNetwork:
         db2 = np.sum(dZ2, axis=1, keepdims=True) / X.shape[1]
 
         dZ1 = self.W2.T @ dZ2 * (A1 * (1 - A1))
-        dW1 = dZ1 @ A2.T / X.shape[1]
+        dW1 = dZ1 @ X.T / X.shape[1]
         db1 = np.sum(dZ1, axis=1, keepdims=True) / X.shape[1]
 
         self.__W2 = self.W2 - alpha * dW2
