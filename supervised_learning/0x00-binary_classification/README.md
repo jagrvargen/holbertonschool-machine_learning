@@ -27,3 +27,7 @@
 ### 12-neural_network.py - Adds a method to evaluate the network's predictions.
 
 ### 13-neural_network.py - Adds a method to perform gradient descent on the neural network.
+
+### 14-neural_network.py - Adds a method to train the network
+
+### 15-neural_network.py - Updates the train method to include options for verbose printing, graph rendering, and step tracking.
