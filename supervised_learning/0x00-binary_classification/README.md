@@ -31,3 +31,7 @@
 ### 14-neural_network.py - Adds a method to train the network
 
 ### 15-neural_network.py - Updates the train method to include options for verbose printing, graph rendering, and step tracking.
+
+### 16-deep_neural_network.py - Creates the class definition for the DeepNeuralNetwork class.
+
+### 17-deep_neural_network.py - Converts public instance attributes to private instance attributes with corresponding getter functions.
