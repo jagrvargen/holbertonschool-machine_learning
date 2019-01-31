@@ -41,3 +41,5 @@
 ### 19-deep_neural_network.py - Adds a method to calculate the cost of the model.
 
 ### 20-deep_neural_network.py - Adds a method to evaluate the model's predictions.
+
+### 21-deep_neural_network.py - Adds a method to perform gradient descent on the neural network.
