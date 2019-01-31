@@ -35,3 +35,5 @@
 ### 16-deep_neural_network.py - Creates the class definition for the DeepNeuralNetwork class.
 
 ### 17-deep_neural_network.py - Converts public instance attributes to private instance attributes with corresponding getter functions.
+
+### 18-deep_neural_network.py - Adds a method to calculate forward propagation through the deep neural network.
