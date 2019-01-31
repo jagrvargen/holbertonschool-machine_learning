@@ -39,3 +39,5 @@
 ### 18-deep_neural_network.py - Adds a method to calculate forward propagation through the deep neural network.
 
 ### 19-deep_neural_network.py - Adds a method to calculate the cost of the model.
+
+### 20-deep_neural_network.py - Adds a method to evaluate the model's predictions.
