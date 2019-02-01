@@ -45,3 +45,5 @@
 ### 21-deep_neural_network.py - Adds a method to perform gradient descent on the neural network.
 
 ### 22-deep_neural_network.py - Adds a method to train the model.
+
+### 23-deep_neural_network.py - Updates the train method to include options for verbose printing, graph rendering, and step tracking.
