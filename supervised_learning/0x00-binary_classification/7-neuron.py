@@ -1,8 +1,10 @@
+
 #!/usr/bin/env python3
 """
 Class definition for Neuron with private instance attributes
 """
 import numpy as np
+import matplotlib.pyplot as plt
 
 
 class Neuron:
@@ -17,6 +19,7 @@ class Neuron:
         self.__W = np.random.normal(size=(nx, 1))
         self.__b = np.zeros((1, 1))
         self.__A = 0
+        self.__Z = 0
 
     @property
     def W(self):
@@ -62,7 +65,7 @@ class Neuron:
         self.__W = self.__W - alpha * dw
         self.__b = self.__b - alpha * db
 
-    def train(self, X, Y, iterations=5000, alpha=0.05):
+    def train(self, X, Y, iterations=5000, alpha=0.05, verbose=True, graph=True, step=100):
         """ Trains the neuron """
         if not isinstance(iterations, int):
             raise TypeError("iterations must be an integer")
@@ -74,8 +77,34 @@ class Neuron:
         if alpha <= 0:
             raise ValueError("alpha must be positive")
 
-        for i in range(iterations):
+        if verbose or graph:
+            if not isinstance(step, int):
+                raise TypeError("step must be an integer")
+            if step < 1 or step >= iterations:
+                raise ValueError("step must be positive and <= iterations")
+
+        if graph:
+            x = np.arange(0, iterations + 1, step)
+            y = np.empty((iterations // step + 1, 4))
+            
+        for i in range(iterations + 1):
             self.forward_prop(X)
-            self.gradient_descent(X, Y, self.A, alpha)
+
+            if i % step == 0 or i == iterations:
+                cost = self.cost(Y, self.A)
+                if verbose:
+                    print("Cost after {} iterations: {}".format(i, cost))
+                if graph:
+                    y[i // step] = cost
+                        
+            self.gradient_descent(X, Y, self.A, alpha)                        
+
+        if graph:
+            y[-1] = cost
+            plt.plot(x, y)
+            plt.xlabel("iteration")
+            plt.ylabel("cost")
+            plt.suptitle("Training Cost")
+            plt.show()
 
         return self.evaluate(X, Y)
