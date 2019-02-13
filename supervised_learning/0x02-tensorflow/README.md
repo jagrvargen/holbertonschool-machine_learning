@@ -7,3 +7,5 @@
 ### 2-forward_prop.py - Defines the function forward_prop(x, nx, layer_sizes=[], activations=[]) which creates the forward propagation graph for a neural network.
 
 ### 3-calculate_accuracy - Defines the function calculate_accuracy(y, y_pred) which calculates the accuracy of the prediction made by a neural network.
+
+### 4-calculate_loss - Defines the function calculate_loss(y, y_pred) which calculates the softmax cross-entropy loss of a neural network's prediction.
