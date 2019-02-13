@@ -14,8 +14,6 @@ def create_layer(prev, n_prev, n, activation):
     activation: tf.nn.{activation} - Activation function for new layer
     """
     with tf.name_scope("layer"):
-        W = tf.get_variable("W", shape=(n_prev, n), initializer=tf.contrib.layers.variance_scaling_initializer(mode="FAN_AVG"), dtype=tf.float32)
-        b = tf.get_variable("b", shape=(n,), dtype=tf.float32)
-        layer = activation((tf.matmul(prev, W) + b))
+        layer = tf.layers.Dense(n, activation=activation, use_bias=True, kernel_initializer=tf.contrib.layers.variance_scaling_initializer(mode="FAN_AVG"), name="layer")
 
-    return layer
+    return layer(prev)
