@@ -13,3 +13,5 @@
 ### 5-create_train_op.py - Defines the function create_train_op(loss, alpha) which creates the training operation for a neural network.
 
 ### 6-train.py - Defines the function train(X_train, Y_train, X_valid, Y_valid, layer_sizes, activations, alpha, iterations, save_path="/tmp/model.ckpt") which builds, trains, and saves a neural network classifier.
+
+### 7-evaluate.py - Defines the function evaluate(X, Y, save_path) which evaluates the output of a neural network.
