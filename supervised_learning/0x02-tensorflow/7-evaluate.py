@@ -15,4 +15,13 @@ def evaluate(X, Y, save_path):
     returns: The network's prediction, accuracy, and loss
     """
     with tf.Session() as sess:
-        
+        saver = tf.train.import_meta_graph(save_path + ".meta")
+        saver.restore(sess, save_path)
+        graph = tf.get_default_graph()
+        x = graph.get_collection('x')[0]
+        y = graph.get_collection('y')[0]
+        y_pred = graph.get_collection('y_pred')[0]
+        loss = graph.get_collection('loss')[0]
+        accuracy = graph.get_collection('accuracy')[0]
+
+        return sess.run((y_pred, loss, accuracy), {x: X, y: Y})
