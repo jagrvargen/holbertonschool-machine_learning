@@ -11,3 +11,5 @@
 ### 4-moving_average.py - Contains the function definition moving_average(data, beta) which calculates the weighted moving average of a data set.
 
 ### 5-momentum.py - Contains the function definition update_variables_momentum(alpha, beta1, var, grad, v) which updates a variable using the gradient descent with momentum optimization algorithm.
+
+### 6-momentum.py - Contains the function definition create_momentum_op(loss, alpha, beta1) which creates a training operation for a neural network in tensorflow using the gradient descent with momentum optimization algorithm.
