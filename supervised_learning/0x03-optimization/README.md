@@ -9,3 +9,5 @@
 ### 3-mini_batch.py - Contains the function definition train_mini_batch(X_train, Y_train, X_valid, Y_valid, batch_size=32, epochs=5, load_path="/tmp/model.ckpt", save_path="/tmp/model.ckpt") which trains a neural network using mini-batch gradient descent.
 
 ### 4-moving_average.py - Contains the function definition moving_average(data, beta) which calculates the weighted moving average of a data set.
+
+### 5-momentum.py - Contains the function definition update_variables_momentum(alpha, beta1, var, grad, v) which updates a variable using the gradient descent with momentum optimization algorithm.
