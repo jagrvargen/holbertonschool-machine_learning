@@ -13,3 +13,5 @@
 ### 5-momentum.py - Contains the function definition update_variables_momentum(alpha, beta1, var, grad, v) which updates a variable using the gradient descent with momentum optimization algorithm.
 
 ### 6-momentum.py - Contains the function definition create_momentum_op(loss, alpha, beta1) which creates a training operation for a neural network in tensorflow using the gradient descent with momentum optimization algorithm.
+
+### 7-RMSProp.py - Contains the function definition update_variables_RMSProp(alpha, beta2, epsilon, var, grad, s) which updates a variable using the RMSProp optimization algorithm.
