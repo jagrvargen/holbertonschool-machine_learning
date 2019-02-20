@@ -21,3 +21,5 @@
 ### 9-Adam.py - Contains the function definition update_variables_Adam(alpha, beta1, beta2, epsilon, var, grad, v, s, t) updates a variable using the Adam optimization algorithm.
 
 ### 10-Adam.py - Contains the function definition create_Adam_op(loss, alpha, beta1, beta2, epsilon) which creates the training operation for a neural network in TensorFlow using the Adam optimization algorithm.
+
+### 11-learning_rate_decay.py - Contains the function definition learning_rate_decay(alpha, decay_rate, global_step, decay_step) which updates the learning rate using inverse time decay.
