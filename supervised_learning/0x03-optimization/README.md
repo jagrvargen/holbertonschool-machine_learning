@@ -29,3 +29,5 @@
 ### 13-batch_norm.py - Contains the function definition batch_norm(Z, gamma, beta, epsilon) which normalizes an unactivated output of a neural network (using batch normalization).
 
 ### 14-batch_norm.py - Contains the function definition create_batch_norm_layer(prev, n, activation) which creates a batch normalization layer for a neural network in TensorFlow.
+
+### 15-model.py - Contains the function definition model(Data_train, Data_valid, layers, activations, alpha=0.001, beta1=0.9, beta2=0.999, epsilon=1e-8, decay_rate=1, batch_size=32, epochs=5, save_path='/tmp/model.ckpt') which builds, trains, and saved a neural network model in TensorFlow using Adam optimization, mini-batch gradient descent, learning rate decay, and batch normalization.
