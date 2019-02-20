@@ -18,7 +18,7 @@ def learning_rate_decay(alpha, decay_rate, global_step, decay_step):
 
     Returns: The updated value for alpha.
     """
-    if global_step % decay_step == 0:
-        alpha *= 1 / (1 + decay_rate * global_step)
+    decay_rate /= global_step // decay_step + 1
+    alpha *= decay_rate
 
     return alpha
