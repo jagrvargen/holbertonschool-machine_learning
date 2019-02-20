@@ -17,3 +17,5 @@
 ### 7-RMSProp.py - Contains the function definition update_variables_RMSProp(alpha, beta2, epsilon, var, grad, s) which updates a variable using the RMSProp optimization algorithm.
 
 ### 8-RMSProp.py - Contains the function definition create_RMSProp_op(loss, alpha, beta2, epsilon) which creates the training operation for a neural network in TensorFlow using the RMSProp optimization algorithm.
+
+### 9-Adam.py - Contains the function definition update_variables_Adam(alpha, beta1, beta2, epsilon, var, grad, v, s, t) updates a variable using the Adam optimization algorithm.
