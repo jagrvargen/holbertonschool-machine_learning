@@ -27,3 +27,5 @@
 ### 12-learning_rate_decay.py - Contains the function definition learning_rate_decay(alpha, decay_rate, global_step, decay_step) which creates a learning rate decay operation in TensorFlow using inverse time decay.
 
 ### 13-batch_norm.py - Contains the function definition batch_norm(Z, gamma, beta, epsilon) which normalizes an unactivated output of a neural network (using batch normalization).
+
+### 14-batch_norm.py - Contains the function definition create_batch_norm_layer(prev, n, activation) which creates a batch normalization layer for a neural network in TensorFlow.
