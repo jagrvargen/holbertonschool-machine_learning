@@ -18,11 +18,7 @@ def create_confusion_matrix(labels, logits):
     """
     confusion_matrix = np.zeros((labels.shape[1], logits.shape[1]))
 
-    for i in range(len(labels)):
-        print(np.argmax(labels[i]))
-        confusion_matrix[i][np.argmax(labels[i])] += 1
-            
-    for j in range(len(logits)):
-        confusion_matrix[np.argmax(logits[i])][i] += 1
-
+    for i, j in enumerate(labels):
+        confusion_matrix[np.argmax(j)][np.argmax(logits[i])] += 1
+    
     return confusion_matrix
