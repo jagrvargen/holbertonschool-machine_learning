@@ -9,3 +9,5 @@
 ### 3-specificity.py - Contains the function definition specificity(confusion) which calculates the specificity for each class in a confusion matrix.
 
 ### 4-f1_score.py - Contains the function definition f1_score(confusion) which calculates the F1 score of a confusion matrix.
+
+### 5-error_handling & 6-compare_and_contrast - Answer files to multiple choice questions regarding scenarios in machine learning training which may involve high/low bias/variance.
