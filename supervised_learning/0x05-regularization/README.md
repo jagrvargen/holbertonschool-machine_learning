@@ -5,3 +5,5 @@
 ### 1-l2_reg_gradient_descent.py - Contains the function definition l2_reg_gradient_descent(Y, weights, cache, alpha, lambtha, L) which updates the weights of a neural network with L2 regularization using gradient descent.
 
 ### 2-l2_reg_cost.py - Contains the function definition l2_reg_cost(cost) which calculates the cost of a neural network with L2 regularization.
+
+### 3-l2_reg_create_layer.py - Contains the function definition l2_reg_create_layer(prev, n, activation, lambtha) which creates a TensorFlow layer that includes L2 regularization.
