@@ -11,3 +11,5 @@
 ### 4-dropout_forward_prop.py - Contains the function definition dropout_forward_prop(X, weights, L, keep_prob) which conducts forward propagation using dropout.
 
 ### 5-dropout_gradient_descent.py - Contains the function definition dropout_gradient_descent(Y, weights, cache, alpha) which updates the weights of a neural network with dropout regularization using gradient descent.
+
+### 6-dropout_create_layer.py - Contains the function definition dropout_create_layer(prev, n, activation, keep_prob) which creates a layer of a neural network using dropout (in TensorFlow).
