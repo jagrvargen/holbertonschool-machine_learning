@@ -21,7 +21,7 @@ def dropout_forward_prop(X, weights, L, keep_prob):
 
     for l in range(1, L + 1):
         Z = weights["W{}".format(l)] @ cache["A{}".format(l-1)] + weights["b{}".format(l)]
-        A = 1 / (1 + np.exp(-Z))
+        A = np.tanh(Z)
 
         if l < L:
             D = np.random.rand(A.shape[0], A.shape[1])
