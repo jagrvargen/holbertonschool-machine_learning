@@ -16,4 +16,4 @@ def optimize_model(network, alpha, beta1, beta2):
 
     Returns: Nothing.
     """
-    network.compile(optimizer=tf.train.AdamOptimizer(alpha, beta1, beta2))
+    network.compile(optimizer=keras.optimizers.Adam(alpha, beta1, beta2), loss='categorical_crossentropy', metrics=['accuracy'])
