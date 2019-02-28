@@ -2,8 +2,7 @@
 """
 Contains the function def one_hot(labels, classes=None)
 """
-import tensorflow as tf
-import tensorflow.keras as keras
+import tensorflow.keras as K
 
 
 def one_hot(labels, classes=None):
@@ -14,4 +13,4 @@ def one_hot(labels, classes=None):
 
     Returns: The one-hot matrix.
     """
-    return keras.utils.to_categorical(labels)
+    return K.utils.to_categorical(labels)
