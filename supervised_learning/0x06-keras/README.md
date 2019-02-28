@@ -15,3 +15,7 @@
 ### 6-train.py - Contains the function definition train_model(network, data, labels, batch_size, epochs, validation_data=None, early_stopping=False, patience=0, verbose=True) which trains a model using mini-batch gradient descent.
 
 ### 7-train.py - Contains the function definition train_model(network, data, labels, batch_size, epochs, validation_data=None, early_stopping=False, patience=0, learning_rate_decay=False, alpha=0.1, decay_rate=1, verbose=True) which trains a model using mini-batch gradient descent.
+
+### 8-train.py - Contains the function definition train_model(network, data, labels, batch_size, epochs, validation_data=None, early_stopping=False, patience=0, learning_rate_decay=False, alpha=0.1, decay_rate=1, save_best=False, filepath=None, verbose=True) which trains a model using mini-batch gradient descent.
+
+### 9-model.py - Contains the function definitions save_model(network, filename) and load_model(filename) which save and load a Keras model respectively.
