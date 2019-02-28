@@ -2,8 +2,7 @@
 """
 Contains the function def optimize_model(network, alpha, beta1, beta2)
 """
-import tensorflow as tf
-import tensorflow.keras as keras
+import tensorflow.keras as K
 
 
 def optimize_model(network, alpha, beta1, beta2):
@@ -16,4 +15,4 @@ def optimize_model(network, alpha, beta1, beta2):
 
     Returns: Nothing.
     """
-    network.compile(optimizer=keras.optimizers.Adam(alpha, beta1, beta2), loss='categorical_crossentropy', metrics=['accuracy'])
+    network.compile(optimizer=K.optimizers.Adam(alpha, beta1, beta2), loss='categorical_crossentropy', metrics=['accuracy'])
