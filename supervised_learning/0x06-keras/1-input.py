@@ -2,8 +2,7 @@
 """
 Contains the function def build_model(nx, layers, activations, lambtha, keep_prob)
 """
-import tensorflow as tf
-import tensorflow.keras as keras
+import tensorflow.keras as K
 
 
 def build_model(nx, layers, activations, lambtha, keep_prob):
@@ -18,14 +17,14 @@ def build_model(nx, layers, activations, lambtha, keep_prob):
 
     Returns: The Keras model.
     """
-    inputs = keras.Input(shape=(nx,))
+    inputs = K.Input(shape=(nx,))
     x = inputs
 
     for i in range(len(layers)):
-        x = keras.layers.Dense(layers[i], activation=activations[i], kernel_initializer=keras.initializers.he_normal(), kernel_regularizer=keras.regularizers.l2(l=lambtha))(x)
+        x = K.layers.Dense(layers[i], activation=activations[i], kernel_initializer=K.initializers.he_normal(), kernel_regularizer=K.regularizers.l2(l=lambtha))(x)
         if i < len(layers) - 1:
-            x = keras.layers.Dropout(1 - keep_prob)(x)
+            x = K.layers.Dropout(1 - keep_prob)(x)
 
-    model = keras.Model(inputs=inputs, outputs=x)
+    model = K.Model(inputs=inputs, outputs=x)
             
     return model
