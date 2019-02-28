@@ -21,7 +21,7 @@ def build_model(nx, layers, activations, lambtha, keep_prob):
     inputs = keras.Input(shape=(nx,))
     x = inputs
 
-    for i in range(1, len(layers)):
+    for i in range(len(layers)):
         x = keras.layers.Dense(layers[i], activation=activations[i], kernel_initializer=keras.initializers.he_normal(), kernel_regularizer=keras.regularizers.l2(l=lambtha))(x)
         if i < len(layers) - 1:
             x = keras.layers.Dropout(1 - keep_prob)(x)
