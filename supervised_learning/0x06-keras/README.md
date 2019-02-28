@@ -21,3 +21,5 @@
 ### 9-model.py - Contains the function definitions save_model(network, filename) and load_model(filename) which save and load a Keras model respectively.
 
 ### 10-weights.py - Contains the function definitions save_weights(network, filename, save_format='h5') and load_weights(network, filename) which save and load a Keras model's weights respectively.
+
+### 11-config.py - Contains the function definitions save_config(network, filename) and load_config(filename) which save and load a Keras model's configuration in JSON format respectively.
