@@ -25,3 +25,5 @@
 ### 11-config.py - Contains the function definitions save_config(network, filename) and load_config(filename) which save and load a Keras model's configuration in JSON format respectively.
 
 ### 12-test.py - Contains the function definition test_model(network, data, labels, verbose=True) which tests a neural network.
+
+### 13-predict.py - Contains the function definition predict(network, data, verbose=False) which makes a prediction using an existing neural network.
