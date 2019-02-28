@@ -2,8 +2,7 @@
 """
 Contains the function def train_model(network, data, labels, batch_size, epochs, validation_data=None, verbose=True)
 """
-import tensorflow as tf
-import tensorflow.keras as keras
+import tensorflow.keras as K
 
 
 def train_model(network, data, labels, batch_size, epochs, validation_data=None, verbose=True):
