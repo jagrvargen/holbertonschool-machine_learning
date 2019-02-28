@@ -2,14 +2,13 @@
 """
 Contains the function def train_model(network, data, labels, batch_size, epochs, validation_data=None, early_stopping=False, patience=0, verbose=True)
 """
-import tensorflow as tf
-import tensorflow.keras as keras
+import tensorflow.keras as K
 
 
 def train_model(network, data, labels, batch_size, epochs, validation_data=None, early_stopping=False, patience=0, verbose=True):
     """
     Trains a model using mini-batch gradient descent.
-    network: keras.Model - The model to be trained.
+    network: K.Model - The model to be trained.
     data: numpy.ndarray - Contains the input data for the network.
     labels: numpy.ndarray - Contains the labels for the data.
     batch_size: int - The size of the batches used in mini-batch gradient descent.
@@ -24,6 +23,6 @@ def train_model(network, data, labels, batch_size, epochs, validation_data=None,
     Returns: Nothing.
     """
     if early_stopping:
-        network.fit(data, labels, batch_size=batch_size, epochs=epochs, callbacks=[keras.callbacks.EarlyStopping(patience=patience)], validation_data=validation_data, verbose=verbose)
+        network.fit(data, labels, batch_size=batch_size, epochs=epochs, callbacks=[K.callbacks.EarlyStopping(patience=patience)], validation_data=validation_data, verbose=verbose)
     else:
         network.fit(data, labels, batch_size=batch_size, epochs=epochs, validation_data=validation_data, verbose=verbose)
