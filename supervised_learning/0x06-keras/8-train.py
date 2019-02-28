@@ -36,16 +36,7 @@ def train_model(network, data, labels, batch_size, epochs, validation_data=None,
             def schedule(epoch):
                 return alpha / (1 + decay_rate * epoch)
             callbacks.append(K.callbacks.LearningRateScheduler(schedule=schedule, verbose=verbose))
+        if save_best:
+            callbacks.append(K.callbacks.ModelCheckpoint(filepath, save_best_only=True))
 
     network.fit(data, labels, batch_size=batch_size, epochs=epochs, callbacks=callbacks, validation_data=validation_data, verbose=verbose)
-
-    if save_best:
-        try:
-            old_model = K.models.load_model(filepath)
-            old_loss, _ = old_model.evaluate(data, labels, verbose=verbose)
-            new_loss, _ = network.evaluate(data, labels, verbose=verbose)
-
-            if new_loss < old_loss:
-                network.save(filepath)
-        except:
-            network.save(filepath)
