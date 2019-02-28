@@ -19,3 +19,5 @@
 ### 8-train.py - Contains the function definition train_model(network, data, labels, batch_size, epochs, validation_data=None, early_stopping=False, patience=0, learning_rate_decay=False, alpha=0.1, decay_rate=1, save_best=False, filepath=None, verbose=True) which trains a model using mini-batch gradient descent.
 
 ### 9-model.py - Contains the function definitions save_model(network, filename) and load_model(filename) which save and load a Keras model respectively.
+
+### 10-weights.py - Contains the function definitions save_weights(network, filename, save_format='h5') and load_weights(network, filename) which save and load a Keras model's weights respectively.
