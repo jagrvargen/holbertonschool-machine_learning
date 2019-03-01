@@ -37,18 +37,19 @@ def conv_forward(A_prev, W, b, activation, padding="same", stride=(1, 1)):
     # Apply padding to input (or not)
     s = stride[0]
     if padding == "valid":
-        p = (kh - s) / 2
-        A_prev = np.pad(A_prev, (p, p), 'constant', constant_values=(0, 0))
+        p = (kh - s) // 2
+        A_prev = np.pad(A_prev, ((0, 0), (p, p), (p, p), (0,0)), 'constant', constant_values=0)
     else:
         p = 0
 
-    # Calculate the size of the output and create a 3D tensor of 0s
-    out_h = (h_prev - kh + 2 * p) / s + 1
-    output = np.zeros((out_h, out_h, c_new))
+    # Calculate the size of the output and create a 4D tensor of 0s
+    out_h = (h_prev - kh + 2 * p) // s + 1
+    output = np.zeros((m, out_h, out_h, c_new))
 
     # Forward prop
-    for i in range(c_new):
-        for j in range(out_h):
-            for k in range(out_h):
-                output[i][j][k] = np.sum()
-    
+    for layer in range(c_new):
+        for i in range(out_h):
+            for j in range(out_h):
+                output[:,i,j,layer] = activation(np.sum(A_prev[:, i*s:i*s+kh, j*s:j*s+kw, :] * W[:,:,:,layer], axis=(1,2,3)) + b[:,:,:,layer])
+
+    return output
