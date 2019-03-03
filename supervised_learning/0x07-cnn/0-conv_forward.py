@@ -37,7 +37,7 @@ def conv_forward(A_prev, W, b, activation, padding="same", stride=(1, 1)):
     # Apply padding to input (or not)
     s = stride[0]
     if padding == "valid":
-        p = (kh - s) // 2
+        p = (kh + s * (h_prev - 1) - h_prev) // 2
         A_prev = np.pad(A_prev, ((0, 0), (p, p), (p, p), (0,0)), 'constant', constant_values=0)
     else:
         p = 0
