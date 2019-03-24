@@ -8,7 +8,7 @@ import tensorflow.keras as K
 def inception_block(A_prev, filters):
     """
     Builds an inception block
-    A_prev: Output of previous layer
+    A_prev: K.Tensor - Output of previous layer
     filters: tuple - Contains # of filters for each convolution
     """
     F1, F3R, F3, F5R, F5, FPP = filters
